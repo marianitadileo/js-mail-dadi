@@ -4,3 +4,12 @@
     box-sizing: border-box;
 }
 
+.style {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: skyblue;
+    border: 1px solid black;
+    border-radius: 20px;
+}

@@ -15,6 +15,7 @@ console.log(mailUser);
 // ALTRIMENTI se l'email non appartiene stampa email non valida
 
 let validator = false; 
+let message = "";
 
 for (let i = 0; i < listMail.length; i++) {
 const mail = listMail[i];
@@ -24,10 +25,10 @@ const mail = listMail[i];
 }
 
 if (validator === true) {
-    console.log("Email valida!");
+    message = "Email valida!";
 } else {
-    console.log("Email non valida. Riprova.");
+    message = "Email non valida";
 }
 
-document.getElementById('email').innerHTML = `La tua email è valida: ${mailUser}`;
-document.getElementById('email').innerHTML = `La tua email non è valida: ${mailUser}`;
+console.log(message);
+document.getElementById('email').innerHTML = `${message} ${mailUser}`;
